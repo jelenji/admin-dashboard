@@ -79,16 +79,25 @@
     gap: 100px;
 }
 
-.header-top-left{
+.header-top-left,
+.header-bottom-left{
     margin-left: 50px;
+}
+
+.header-top-right
+.header-bottom-right{
+    margin-right: 50px;
+    
+}
+
+.header-top-left{
     align-self: center;
 }
 
 .header-top-right{
-    margin-right: 50px;
     align-self: center;
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .header-top-right svg{
@@ -125,6 +134,72 @@
 
 .header-bottom{
     display: grid;
+    grid-template-columns: 1fr .5fr;
+}
 
+.header-bottom-left{
+    display: flex;
+    gap:25px;
+}
+
+.header-bottom-left .avi-container{
+    width: 80px;
+    height: 80px;
+}
+
+.greetings-container h2,
+.greetings-container h4{
+    color: var(--primary-color);
+}
+
+.greetings-container h2{
+    margin-top: 10px;
+}
+
+.header-bottom-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-bottom-right button{
+    background-color: var(--primary-color);
+    color: #000000;
+    font-size: 24px;
+    padding: 12px 24px;
+    border-color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+.header-bottom-right button:active{
+    background-color: #000000;
+    color: var(--primary-color)
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr .4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "projects annoucements"
+    "projects trending";
+    gap: 20px;
+    
+}
+
+.projects{
+    border: 3px solid red;
+    grid-area: projects;
+}
+
+.announcements{
+    border: 3px solid blue;
+    grid-area: annoucements;
+}
+
+.trending{
+    border: 3px solid green;
+    grid-area: trending;
 }
 
