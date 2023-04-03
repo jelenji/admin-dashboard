@@ -3,7 +3,7 @@
     --header-color: #ffffff;
     --blue: #0066FF;
     --primary-color:  #FFEA00 ;
-    --header-background: #262626;
+    --header-background: #18181b;
 }
 
 *{
@@ -27,7 +27,7 @@
 }
 
 .sidebar{
-    background-color: #000000;
+    background-color: #0a0a0a;
     grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,6 @@
     grid-template-columns: 1fr .3fr;
     gap: 100px;
 }
-
 .header-top-left,
 .header-bottom-left{
     margin-left: 50px;
@@ -147,9 +146,11 @@
     height: 80px;
 }
 
-.greetings-container h2,
-.greetings-container h4{
+.greetings-container h2{
     color: var(--primary-color);
+}
+.greetings-container h4{
+    color: #ffffff;
 }
 
 .greetings-container h2{
@@ -178,28 +179,154 @@
 }
 
 .content{
+    background-color: #d4d4d8;
     display: grid;
     grid-template-columns: 1fr .4fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "projects annoucements"
     "projects trending";
-    gap: 20px;
+    gap: 100px;
     
 }
 
 .projects{
-    border: 3px solid red;
+
     grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .announcements{
-    border: 3px solid blue;
     grid-area: annoucements;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.projects h2{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.card-container{
+    margin-left: 30px;
+    margin-bottom: 100px;
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--header-background);
+    height: 100%;
+    border-radius: 10px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    border-left: 8px solid  #ff000d;
+    box-shadow:3px 0 20px var(--primary-color);
+
+}
+
+.card h2{
+    color: var(--primary-color);
+    margin: 10px;
+    flex: 1;
+}
+
+.card p {
+    color: #ffffff;
+    font-size: 22px;
+    margin: 10px;
+    flex: 1;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.card-content{
+    flex: 1;
+}
+
+.icon-container svg{
+    width: 35px;
+    fill: var(--primary-color)
+}
+
+.announcements h2{
+    margin-top: 50px;
+}
+
+.announcement-content,
+.trending-content{
+    background-color: var(--header-background);
+    flex: 1;
+    margin-right: 30px;
+    display: grid;
+    padding: 25px;
+    align-items: center;
+    border-left: 8px solid  #ff000d;
+    box-shadow:3px 0 20px var(--primary-color);
+}
+
+.announcement-content h4{
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.announcement-content p{
+    margin: 10px;
+    color: #ffffff;
+    width: 90%;
+    font-size: 15px;
+    margin-left: 50px;
 }
 
 .trending{
-    border: 3px solid green;
     grid-area: trending;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+
+.trending-content{
+    margin-bottom: 25px;
+    display: grid;
+    gap: 20px;
+    flex: 1
+}
+
+.trending-card{
+    display: flex;
+    gap:40px;
+    margin-left: 40px;
+}
+
+
+.trending-card .avi-container{
+    width: 60px;
+    height: 60px;
+
+}
+
+.trending-info h4{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.trending-info h2{
+    color: var(--primary-color);
+    font-size: 20px;
+
+}
