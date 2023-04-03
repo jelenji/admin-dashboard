@@ -110,6 +110,8 @@
     fill: var(--primary-color)
 }
 
+
+
 #search-bar{
     background-color: #000000;
     width: 100%;
@@ -154,7 +156,7 @@
 }
 
 .header-top-right .name{
-    font-size: 24px;;
+    font-size: 30px;
 }
 
 .header-bottom{
@@ -170,7 +172,7 @@
 .header-bottom-left .avi-container{
     width: 80px;
     height: 80px;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Pittsburgh_Steelers_logo.svg/2048px-Pittsburgh_Steelers_logo.svg.png) no-repeat;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Pittsburgh_Steelers_logo.svg/2048px-Pittsburgh_Steelers_logo.svg.png") no-repeat;
     background-size: cover;
 }
 
@@ -183,6 +185,7 @@
 
 .greetings-container h2{
     margin-top: 10px;
+    font-size: 30px;
 }
 
 .header-bottom-right{
