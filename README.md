@@ -1,5 +1,7 @@
 # Admin Dashboard
 
+![Screenshot of admin dashboard](/img/admin-dashboard.png)
+
 [Live Demo](https://jelenji.github.io/admin-dashboard/)
 
 This is a simple admin dashboard template project from the Odin Project course, built with HTML and CSS. It can be used as a starting point for building custom admin dashboards for various web applications.
